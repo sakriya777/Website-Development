@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SB || Contact Us</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/my.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+  <div class="container">
+<header class="sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a href="home.html" class="navbar-brand"><img src="images/logo.png" alt="logo image">Contact Us</a>
+    <div id="clockbox" class="text-light"></div>
+    <script>
+    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+    function GetClock(){
+    var d=new Date();
+    var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+    var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+    if(nhour==0){ap=" AM";nhour=12;}
+    else if(nhour<12){ap=" AM";}
+    else if(nhour==12){ap=" PM";}
+    else if(nhour>12){ap=" PM";nhour-=12;}
+
+    if(nmin<=9) nmin="0"+nmin;
+    if(nsec<=9) nsec="0"+nsec;
+
+    var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+    document.getElementById('clockbox').innerHTML=clocktext;
+    }
+
+    GetClock();
+    setInterval(GetClock,1000);
+    </script>
+    <button class="navbar-toggler">
+      <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarMenu"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+       <ul class="navbar-nav ml-auto">
+        <li class="navbar-item"><a href="phantom.html" class="nav-link">Home</a></li>
+        <li class="navbar-item"><a href="about.html" class="nav-link">About Us</a></li>
+        <li class="navbar-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        <li class="navbar-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="navbar-item"><a href="../home.html" class="nav-link">Assesments</a></li>
+       </ul>  
+      </div>
+     </nav> 
+    </header>
+    <!--header of the page ends-->
+<hr>
+<section id="page">
+<div class="container text-center welcome">
+<div class="row text-center">
+  <div class="com-md-12" style="margin: auto auto;">
+    <h1>Visit Us</h1>
+    <hr>
+  </div>
+</div>
+<div class="row">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8170596906593!2d85.31714151452887!3d27.69204853277211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b19295555f%3A0xabfe5f4b310f97de!2z4KSs4KWN4KSw4KS_4KSf4KS_4KS2IOCkleCksuClh-CknCwg4KSV4KS-4KSg4KSu4KS-4KSh4KWM4KSC!5e0!3m2!1sne!2snp!4v1557318366503!5m2!1sne!2snp" style="width:100%; height:500px; border:0" allowfullscreen></iframe>
+</div>
+<div class="row text-center">
+  <div class="com-md-12" style="margin: auto auto;">
+    <h1>Contact US</h1>
+    <hr>
+  </div>
+</div>
+  <div class="row ">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <i class="fab fa-instagram"></i>
+      <h3>Instagram</h3>
+      <p>Follow us on instagram</p>
+      <button onclick="window.location.href='https://www.instagram.com'" class="btn btn-primary" type="button" style="background-color: #8a3ab9;">Follow Us</button>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <i class="fab fa-facebook-f"></i>
+      <h3>Facebook</h3>
+      <p>Like us on Facebook</p>
+      <button onclick="window.location.href='https://www.facebook.com'" class="btn btn-primary" type="button" style="background-color: #3f729b;">Like Us</button>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <i class="fab fa-twitter"></i>
+      <h3>Twitter</h3>
+      <p>Follow us on instagram</p>
+      <button onclick="window.location.href='https://twitter.com'" class="btn btn-primary" type="button" style="background-color: #00abff;">Follow Us</button>
+    </div>
+  </div>
+
+  
+</div>
+</section>
+
+
+<!--footer of the page begins-->
+  <footer class="text-center">
+    <div class="row bg-dark text-light">
+        <div class="col-lg-3 col-md-6 col-sm-12" style="align-content:center">
+          <h3 class="text-center">Outlets</h3>
+          <p>We are at your service 24/7 and are ready to help you anytime</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center" style="align-content:center">
+          <h3 class="text-center">Quick Links</h3>
+          <h6><a href="home.html">Home</a></h6>
+          <h6><a href="gallery.html">Gallery</a></h6>
+          <h6><a href="swepttail.html">Swept Tail</a></h6>
+          <h6><a href="wraith.html">Wraith</a></h6>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12" style="align-content:center">
+      <h3 class="text-center">Our Location</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8170596906593!2d85.31714151452887!3d27.69204853277211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b19295555f%3A0xabfe5f4b310f97de!2z4KSs4KWN4KSw4KS_4KSf4KS_4KS2IOCkleCksuClh-CknCwg4KSV4KS-4KSg4KSu4KS-4KSh4KWM4KSC!5e0!3m2!1sne!2snp!4v1557318366503!5m2!1sne!2snp" style="width:100%; border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12" style="align-content:center">
+          <h3 class="text-center">Office Hour</h3>
+        <p>Staurday: close</p>
+        <p>Sunday to Thursday:10am to 5pm,</p>
+        <p>Friday :10am to 3pm </p>
+        </div>
+      </div>
+  </footer>
+  <!--footer of the page ends-->
+</div>
+
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script>
+  window.sr = ScrollReveal();
+    sr.reveal('#page',{
+      duration:1000,
+      origin:'left',
+      distance: '300px'
+    });
+  </script>
+</body>
+</html>

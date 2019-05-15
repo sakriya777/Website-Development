@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SB | Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Sakriya Bajracharya">
+  <meta name="description" content="Final Webpage For Website Development">
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+<!--main container of the page starts-->
+  <div class="container">
+  <!--header of the page starts-->
+    <header class="sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a href="home.html" class="navbar-brand"><img src="images/logo.png" alt="logo image">About us</a>
+    <div id="clockbox" class="text-light"></div>
+    <script type="text/javascript">
+    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+    function GetClock(){
+    var d=new Date();
+    var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+    var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+    if(nhour==0){ap=" AM";nhour=12;}
+    else if(nhour<12){ap=" AM";}
+    else if(nhour==12){ap=" PM";}
+    else if(nhour>12){ap=" PM";nhour-=12;}
+
+    if(nmin<=9) nmin="0"+nmin;
+    if(nsec<=9) nsec="0"+nsec;
+
+    var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+    document.getElementById('clockbox').innerHTML=clocktext;
+    }
+
+    GetClock();
+    setInterval(GetClock,1000);
+    </script>
+    <button class="navbar-toggler">
+      <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarMenu"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+       <ul class="navbar-nav ml-auto">
+        <li class="navbar-item"><a href="home.html" class="nav-link">Home</a></li>
+        <li class="navbar-item"><a href="about.html" class="nav-link">About Us</a></li>
+        <li class="navbar-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        <li class="navbar-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="navbar-item"><a href="../home.html" class="nav-link">Assesments</a></li>
+       </ul>  
+      </div>
+     </nav> 
+    </header>
+    <!--header of the page ends-->
+<main>
+  
+<br>
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="images/swepttail/image6.jpg" alt="intern">
+          <div class="card-body">
+            <h4 class="card-title">Swept Tail</h4>
+            <p class="card-text">The grille is the largest fitted to any modern-era Rolls Royce. It’s milled from a single piece of aluminium, before being hand-polished to a mirror shine. Further back you’ve the “swept-tail” that gives the car its name, while Rolls says the way the bodywork wraps under the car “with no visible boundary to the surfaces” is “akin to the hull of a yacht”. Meanwhile the “bullet-tip” centre brake light and lower bumper “combine to create a greater feeling of elegance in motion”</p>
+            <a class="btn btn-danger" href="swepttail.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="images/phantom/image6.jpg alt="intern">
+          <div class="card-body">
+            <h4 class="card-title">Phantom</h4>
+            <p class="card-text">Rolls says the Phantom’s new spaceframe structure is 30 per cent more rigid than the previous model, a figure that rises significantly in key areas such as suspension and gearbox. This new structure, coincidentally, offers sufficient flexibility to underpin the next wave of Rolls product, its SUV included.</p>
+            <a class="btn btn-danger" href="phantom.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="images/wraith/image6.jpg" alt="intern">
+          <div class="card-body">
+            <h4 class="card-title">Wraith</h4>
+            <p class="card-text">As for the most dynamic? Well, you’d argue that’s not difficult, given Rolls has long mastered the art of hefty, comfy cars that are designed to soothe not scintillate. But the Wraith is based upon the Ghost limo, so it’s hardly got a sporting chassis at its core, though its rear axle has been widened and its wheelbase shortened.</p>
+            <a class="btn btn-danger" href="wraith.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--footer of the page begins-->
+  <footer class="text-center">
+    <div class="row bg-dark text-light">
+        <div class="col-lg-3 col-md-6 col-sm-12" style="align-content:center">
+          <h3 class="text-center">Outlets</h3>
+          <p>We are at your service 24/7 and are ready to help you anytime</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center" style="align-content:center">
+          <h3 class="text-center">Quick Links</h3>
+          <h6><a href="home.html">Home</a></h6>
+          <h6><a href="gallery.html">Gallery</a></h6>
+          <h6><a href="swepttail.html">Swept Tail</a></h6>
+          <h6><a href="wraith.html">Wraith</a></h6>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12" style="align-content:center">
+      <h3 class="text-center">Our Location</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8170596906593!2d85.31714151452887!3d27.69204853277211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b19295555f%3A0xabfe5f4b310f97de!2z4KSs4KWN4KSw4KS_4KSf4KS_4KS2IOCkleCksuClh-CknCwg4KSV4KS-4KSg4KSu4KS-4KSh4KWM4KSC!5e0!3m2!1sne!2snp!4v1557318366503!5m2!1sne!2snp" style="width:100%; border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12" style="align-content:center">
+          <h3 class="text-center">Office Hour</h3>
+        <p>Staurday: close</p>
+        <p>Sunday to Thursday:10am to 5pm,</p>
+        <p>Friday :10am to 3pm </p>
+        </div>
+      </div>
+  </footer>
+  <!--footer of the page ends-->
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar',{
+      duration:2000,
+      origin:'bottom'
+    });
+
+    sr.reveal('.showcase-left',{
+      duration:2000,
+      origin:'top',
+      distance:'300px'
+    });
+    sr.reveal('.showcase-right',{
+      duration:2000,
+      origin:'right',
+      distance:'300px'
+    });
+    sr.reveal('.showcase-right',{
+      duration:2000,
+      distance: '300px',
+      origin:'top'
+    });
+      sr.reveal('.showcase-btn',{
+      duration:2000,
+      delay : 1000,
+      origin:'top'
+    });
+
+      sr.reveal('.testimonial div',{
+      duration:2000,
+      origin:'bottom'
+    });
+      
+      sr.reveal('.info-left',{
+      duration:2000,
+      origin:'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+      sr.reveal('.info-right',{
+      duration:2000,
+      origin:'right',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+      sr.reveal('.card',{
+      duration:2000,
+      origin:'right',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+      sr.reveal('footer',{
+      duration:2000,
+      origin:'right',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+  </script>
+</body>
+</html>

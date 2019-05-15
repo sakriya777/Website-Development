@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SB | About Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Sakriya Bajracharya">
+  <meta name="description" content="Final Webpage For Website Development">
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+<!--main container of the page starts-->
+  <div class="container">
+  <!--header of the page starts-->
+    <header class="sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a href="home.html" class="navbar-brand"><img src="images/logo.png" alt="logo image">About us</a>
+    <div id="clockbox" class="text-light"></div>
+    <script>
+    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+    function GetClock(){
+    var d=new Date();
+    var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+    var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+    if(nhour==0){ap=" AM";nhour=12;}
+    else if(nhour<12){ap=" AM";}
+    else if(nhour==12){ap=" PM";}
+    else if(nhour>12){ap=" PM";nhour-=12;}
+
+    if(nmin<=9) nmin="0"+nmin;
+    if(nsec<=9) nsec="0"+nsec;
+
+    var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+    document.getElementById('clockbox').innerHTML=clocktext;
+    }
+
+    GetClock();
+    setInterval(GetClock,1000);
+    </script>
+    <button class="navbar-toggler">
+      <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarMenu"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+       <ul class="navbar-nav ml-auto">
+        <li class="navbar-item"><a href="phantom.html" class="nav-link">Home</a></li>
+        <li class="navbar-item"><a href="about.html" class="nav-link">About Us</a></li>
+        <li class="navbar-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        <li class="navbar-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="navbar-item"><a href="../home.html" class="nav-link">Assesments</a></li>
+       </ul>  
+      </div>
+     </nav> 
+    </header>
+    <!--header of the page ends-->
+<main>
+  <section id="showcase">
+    <div class="container padding">
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-xs-12 ">
+        <div class="showcase-left">
+          <img src="images/about/chairman.jpg" style="width:100%" alt="Director">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="showcase-right">
+          <h1>Ian Davis</h1>
+          <h3>Chairman</h3>
+          <p>Ian brings tremendous financial and strategic experience as well as significant management insight to the Board. He has worked with, and counseled, global organisations and companies in a wide variety of sectors, as well as in the public sector, enabling him to draw on knowledge of diverse issues and outcomes to assist the Board. His previous role in the Cabinet Office also gives him a unique perspective on government affairs. Ian’s wealth of business knowledge as well as his global experience means that he makes a considerable contribution to the Board and the future of the Company.</p>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  </section>
+
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="images/about/ceo.jpg" alt="intern">
+          <div class="card-body">
+            <h4 class="card-title">CEO</h4>
+            <p class="card-text">Warren has an outstanding record as CEO of ARM Holdings plc. He is an engineer by background and training; he has a deep understanding of technology and of developing long-term partnerships. He has proven strategic and leadership skills in a global business and a strong record of value creation - all of which are relevant to Rolls-Royce, particularly as we undergo a period of simplification. Warren leads the company with energy and enthusiasm, harnessing its world class engineering skills and proud record of innovation and delivery.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="images/about/finance.jpg" alt="intern">
+          <div class="card-body">
+            <h4 class="card-title">Marketing</h4>
+            <p class="card-text">Stephen has a deep understanding of international business across various sectors and an appreciation for looking beyond the numbers to help improve performance. His experience and record of achievement in change management is also particularly relevant to Rolls-Royce and allows Stephen to make a significant contribution to the long-term growth of the business and the increasing demand for its technology. Stephen demonstrates strong leadership qualities and is a valued member of the Board and the Executive Leadership Team. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="images/about/cto.jpg" alt="intern">
+          <div class="card-body">
+            <h4 class="card-title">CTO</h4>
+            <p class="card-text">Paul joined Rolls-Royce in 2010 as Chief Scientific Officer and for two years acted as the Engineering and Technology Director for the Company’s Nuclear particularly relevant to Rolls-Royce and allows Stephen to make a business in addition to his Chief Scientific Officer he increasing demand responsibilities. His most recent role valued member was Director of Research & Technology business and the increasing demand, accountable for the company’s global investment in R&T, as well as fostering innovation and promoting and sustaining specialist engineering talent.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--info-->
+  <section id="info1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="info-left">
+            <img src="images/pa.jpg" alt="enviroment er" style="width:100%">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="info-right">
+          <h2>OUR VISION</h2>
+          <p>Say hello to the Rolls Royce Sweptail – a bespoke one-off built for one of Rolls’ “most valued customers”. Inspired by the “swept-tail” Rolls Royces of the Twenties and Thirties, work began on the Sweptail in 2013, when an unnamed, exceptionally wealthy fellow asked Rolls to build him a “one-off luxury motor car like no other”. So it did. And it’s being shown at the Villa d’Este Concorso d’Eleganza this weekend.<br/>
+            <a class="btn btn-secondary btn-lg" href="swepttail.html">Read more</a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--info-->
+</main>
+<!--footer of the page begins-->
+  <footer class="text-center">
+    <div class="row bg-dark text-light">
+        <div class="col-lg-3 col-md-6 col-sm-12" style="align-content:center">
+          <h3 class="text-center">Outlets</h3>
+          <p>We are at your service 24/7 and are ready to help you anytime</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center" style="align-content:center">
+          <h3 class="text-center">Quick Links</h3>
+          <h6><a href="home.html">Home</a></h6>
+          <h6><a href="gallery.html">Gallery</a></h6>
+          <h6><a href="swepttail.html">Swept Tail</a></h6>
+          <h6><a href="wraith.html">Wraith</a></h6>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12" style="align-content:center">
+      <h3 class="text-center">Our Location</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8170596906593!2d85.31714151452887!3d27.69204853277211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b19295555f%3A0xabfe5f4b310f97de!2z4KSs4KWN4KSw4KS_4KSf4KS_4KS2IOCkleCksuClh-CknCwg4KSV4KS-4KSg4KSu4KS-4KSh4KWM4KSC!5e0!3m2!1sne!2snp!4v1557318366503!5m2!1sne!2snp" style="width:100%; border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12" style="align-content:center">
+          <h3 class="text-center">Office Hour</h3>
+        <p>Staurday: close</p>
+        <p>Sunday to Thursday:10am to 5pm,</p>
+        <p>Friday :10am to 3pm </p>
+        </div>
+      </div>
+  </footer>
+  <!--footer of the page ends-->
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar',{
+      duration:2000,
+      origin:'bottom'
+    });
+
+    sr.reveal('.showcase-left',{
+      duration:2000,
+      origin:'top',
+      distance:'300px'
+    });
+    sr.reveal('.showcase-right',{
+      duration:2000,
+      origin:'right',
+      distance:'300px'
+    });
+    sr.reveal('.showcase-right',{
+      duration:2000,
+      distance: '300px',
+      origin:'top'
+    });
+      sr.reveal('.showcase-btn',{
+      duration:2000,
+      delay : 1000,
+      origin:'top'
+    });
+
+      sr.reveal('.testimonial div',{
+      duration:2000,
+      origin:'bottom'
+    });
+      
+      sr.reveal('.info-left',{
+      duration:2000,
+      origin:'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+      sr.reveal('.info-right',{
+      duration:2000,
+      origin:'right',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+      sr.reveal('.card',{
+      duration:2000,
+      origin:'right',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+  </script>
+</body>
+</html>

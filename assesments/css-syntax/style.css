@@ -1,0 +1,15 @@
+body{
+	margin: 0px;
+}
+h1{
+	background-color: yellow;
+	border-color: black;
+	border:1px solid; 
+	color: blue;
+}
+p, ul{
+	color: red;
+}
+p, ul{
+	text-decoration: underline;
+}

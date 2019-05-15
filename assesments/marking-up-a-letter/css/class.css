@@ -1,0 +1,30 @@
+.body{
+	width: 800px;
+	margin: auto auto;
+	height: auto;
+	
+}
+.container{
+	width: 650px;
+	margin: auto auto;
+	height: auto;
+	
+}
+.box{
+	width: 800px;
+	margin: auto auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	padding-bottom: 20px;
+}
+.sender{
+	text-align : right;
+}
+.reciever{
+	text-align: left;
+}
+.h3{
+	line-height: 1.5;
+	padding: 0px;
+}
